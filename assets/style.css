@@ -1,0 +1,51 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  max-width: 100vw;
+}
+.container {
+  width: 90%;
+}
+table {
+  margin-top: 2rem;
+}
+table tr th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem 0;
+  background-color: rgb(168, 168, 168);
+}
+table tr td {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table tr td input {
+  max-width: 80%;
+}
+table tr td {
+  padding: 0.5rem 0;
+}
+table tr button {
+  padding: 0.2rem 0.2rem;
+  white-space: nowrap;
+  width: 70%;
+}
+#sumbitBtn {
+  width: 6rem;
+  height: 2rem;
+  margin: 0 0 0 2rem;
+}
+#inputsContainer {
+  margin-left: 2rem;
+}
+#checkBrowserWidth {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

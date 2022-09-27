@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mohammad Jafari" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>editable table</title>
+  </head>
+
+  <body>
+    <div id="checkBrowserWidth">
+      <p>Browser width is <span id="chechResult"></span>.</p>
+    </div>
+    <div id="inputsContainer">
+      <input
+        type="text"
+        placeholder="Id"
+        style="margin-top: 1rem"
+      /><br /><br />
+      <input type="text" placeholder="Name" /><br /><br />
+      <input type="text" placeholder="Last Name" /><br /><br />
+      <input type="text" placeholder="Father Name" /><br /><br />
+      <input type="text" placeholder="Birthday" /><br /><br />
+      <input type="text" placeholder="City" /><br /><br />
+      <button id="sumbitBtn" type="submit">Enter</button>
+    </div>
+    <div class="container">
+      <table id="table" style="width: 100%">
+        <tbody id="tbody">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Father Name</th>
+            <th>Birthday</th>
+            <th>City</th>
+            <th><button id="edit_button">Edit</button></th>
+          </tr>
+          <tr id="0">
+            <td>
+              <p>0684665896</p>
+            </td>
+            <td>
+              <p>ali</p>
+            </td>
+            <td>
+              <p>alavi</p>
+            </td>
+            <td>
+              <p>hossein</p>
+            </td>
+            <td>
+              <p>1393/5/6</p>
+            </td>
+            <td>
+              <p>abadan</p>
+            </td>
+            <td>
+              <button style="margin-left: 5px" id="0" onclick="Delet('0')">
+                Delete
+              </button>
+            </td>
+          </tr>
+          <tr id="1">
+            <td>
+              <p>0984665896</p>
+            </td>
+            <td>
+              <p>hadi</p>
+            </td>
+            <td>
+              <p>hashemi</p>
+            </td>
+            <td>
+              <p>hassan</p>
+            </td>
+            <td>
+              <p>1363/8/6</p>
+            </td>
+            <td>
+              <p>tehrn</p>
+            </td>
+            <td>
+              <button style="margin-left: 5px" id="1" onclick="Delet('1')">
+                Delete
+              </button>
+            </td>
+          </tr>
+          <tr id="2">
+            <td>
+              <p>0884665896</p>
+            </td>
+            <td>
+              <p>mohammad</p>
+            </td>
+            <td>
+              <p>namjo</p>
+            </td>
+            <td>
+              <p>ali</p>
+            </td>
+            <td>
+              <p>1397/5/8</p>
+            </td>
+            <td>
+              <p>mashhad</p>
+            </td>
+            <td>
+              <button style="margin-left: 5px" id="2" onclick="Delet('2')">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
